@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap");
+
+:root {
+  --main-green: #79cc87;
+  --white: white;
+  --black: black;
+  --gray: gray;
+  --green: green;
+}
+
+a {
+  padding-right: 0.5em;
+  text-decoration: none;
+  font-family: "Roboto", Times, serif;
+  color: var(--black);
+}
+
+body {
+  margin: 0;
+}
+
+form {
+  padding: 2rem;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 1rem;
+  font-family: "Roboto", Times, serif;
+}
+
+header {
+  background-color: var(--main-green);
+  display: flex;
+  max-height: auto;
+  position: sticky;
+  justify-content: center;
+  z-index: 100;
+}
+
+input {
+  min-width: 30em;
+  margin-top: 1rem;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+li a:hover {
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 30px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+main {
+  padding-top: 5em;
+}
+
+nav {
+  display: flex;
+}
+
+nav,
+nav ul {
+  align-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px 20px;
+}
+
+nav li {
+  color: var(--black);
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  font-weight: bold;
+  list-style: none;
+  text-transform: uppercase;
+  font-family: "Lucida_Console", Arial, sans-serif;
+  align-content: space-between;
+}
+
+p {
+  margin: 0 auto;
+  max-width: 60em;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.blogpost,
+.carouselItems {
+  padding: 2rem;
+  max-width: auto;
+  background-color: var(--white);
+  border: 0.2em solid var(--gray);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.blogs,
+.carousel {
+  background: rgba(0, 255, 13, 0.3);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.img {
+  max-width: 20rem;
+}
+
+.button {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+#button_carousel_circle1,
+#button_carousel_circle2,
+#button_carousel_circle3 {
+  background-color: var(--black);
+  font-size: 1rem;
+  color: white;
+  font-family: "Roboto", Times, serif;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button_showAll {
+  background-color: var(--black);
+  font-size: 1rem;
+  color: white;
+  font-family: "Roboto", Times, serif;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button_submit {
+  background-color: #5ccf4c;
+  font-size: 2rem;
+  color: white;
+  font-family: "Roboto", Times, serif;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.carousel {
+  text-align: center;
+  display: flex;
+  max-width: 100%;
+  background: rgba(0, 255, 13, 0.3);
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+  font-size: 1.3rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+i {
+  padding-right: 0.5em;
+}
+
+.loader {
+  border: 16px solid white;
+  border-top: 16px solid green;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  align-items: center;
+}
+
+.reviewThumbnail {
+  min-width: 30em;
+  max-width: 30em;
+}
+
+.success {
+  border: 1px solid green;
+  padding: 1rem;
+  color: var(--green);
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.thumbnailTitle {
+  font-size: 3rem;
+  padding: 0;
+}
+
+#about_title {
+  font-family: "Roboto", Times, serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+#contactform_headline {
+  font-family: "Roboto", Times, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1em;
+  font-size: 4rem;
+}
+
+#latestPosts_index {
+  font-family: "Roboto", Times, serif;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 0;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+#reviewsTitle {
+  font-family: "Roboto", Times, serif;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 0;
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+img.logo {
+  max-width: 5em;
+}
+
+#logo_subtitle {
+  font-family: "Russo One", Times, serif;
+  text-transform: uppercase;
+  color: var(--white);
+  margin: 0 1em;
+  padding: 1em 0;
+}
+
+#about_container {
+  padding: 2rem;
+  background: rgba(0, 255, 13, 0.2);
+  border-radius: 1rem;
+  font-family: "Russo One", Times, serif;
+  max-width: 100%;
+}
+
+@media (min-width: 40em) {
+  .blogpost,
+  .carouselItems {
+    max-width: 20em;
+  }
+
+  .reviewThumbnail {
+    min-width: 20em;
+    max-width: 20em;
+  }
+
+  .thumbnailTitle {
+    font-size: 2rem;
+  }
+
+  .blogs,
+  .carousel {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5em;
+  }
+}
+
+@media (min-width: 60em) {
+  .blogpost,
+  .carouselItems {
+    max-width: 20em;
+  }
+
+  .reviewThumbnail {
+    max-width: 5em;
+  }
+
+  .thumbnailTitle {
+    font-size: 2rem;
+  }
+
+  .blogs,
+  .carousel {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  input {
+    min-width: 35em;
+  }
+
+  #logo {
+    max-width: 8em;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+}
